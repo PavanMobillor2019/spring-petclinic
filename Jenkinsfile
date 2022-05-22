@@ -7,7 +7,7 @@ pipeline {
 
             }
         }
-        stege('Build'){
+        stage('Build'){
             steps{
                 sh 'mvn clean package'
                 junit '**/target/surefile-reports/TEST-*.xml'
